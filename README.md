@@ -1,7 +1,7 @@
 🎮 Análise Exploratória — Steam Games Dataset
 Autor: Pedro Lima Zampier de Andrade  
 Atividade: Trabalho realizado para a aula de Ciência de Dados  
-Arquivo principal: `steam_analysis_colab.py`
+Arquivo principal: `steam_analysis_colab.ipynb
 ---
 📌 Sobre o projeto
 Este projeto apresenta uma análise exploratória de dados (EDA) sobre jogos da plataforma Steam, utilizando o dataset público Steam Games Dataset. O objetivo da atividade é investigar padrões relacionados a preço, popularidade, avaliações dos usuários, gêneros, DLCs e qualidade percebida dos jogos.
