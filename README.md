@@ -93,6 +93,7 @@ python steam_analysis_colab.py
 .
 ├── steam_analysis_colab.py
 └── README.md
+└──Steam Analysis Deck _standalone_.html
 ```
 ---
 🎯 Objetivo acadêmico
