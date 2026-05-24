@@ -116,6 +116,3 @@ Este projeto compõe a avaliação prática da disciplina de Ciência de Dados, 
 *Última atualização: Maio de 2026*
 
 *Status do Projeto: Concluído / Funcional*
-
-
-```
