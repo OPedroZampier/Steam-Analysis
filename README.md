@@ -45,61 +45,7 @@ steam-games-analysis/
 
 ## Como Executar o Projeto
 
-### Opção 1: Execução em Ambiente Local (Recomendado)
-
-#### Passo 1: Preparar o Ambiente
-
-Crie uma pasta local, mova os arquivos do projeto para lá e acesse o diretório pelo terminal:
-
-```bash
-cd caminho/para/steam-games-analysis
-
-```
-
-#### Passo 2: Criar e Ativar Ambiente Virtual (Venv)
-
-```bash
-# Criar o ambiente virtual
-python -m venv venv
-
-```
-
-> ⚠️ **ATENÇÃO (Usuários de Windows/PowerShell):** Se o sistema retornar um erro de permissão ao tentar ativar a venv, execute o comando abaixo para liberar a execução de scripts no seu usuário:
-> ```powershell
-> Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
-> 
-> ```
-> 
-> 
-
-Ative o ambiente de acordo com o seu sistema operacional:
-
-```bash
-# No Windows (PowerShell):
-venv\Scripts\activate
-
-# No Linux/Mac:
-source venv/bin/activate
-
-```
-
-Você confirmará a ativação quando a tag `(venv)` aparecer no início da linha de comando.
-
-#### Passo 3: Instalar Dependências
-
-```bash
-pip install pandas numpy matplotlib seaborn kagglehub
-
-```
-
-#### Passo 4: Executar a Análise
-
-```bash
-python steam_analysis_colab.py
-
-```
-
-### Opção 2: Execução via Google Colab
+### Execução via Google Colab
 
 1. Faça o upload do arquivo `steam_analysis_colab.py` ou copie o código para um novo notebook no Google Colab.
 2. Execute as células em ordem sequencial (`Shift + Enter`).
@@ -140,38 +86,6 @@ O escopo do projeto foi delimitado para solucionar 6 problemas de negócio:
 * **Sensibilidade ao Preço:** Jogos posicionados em faixas de preço mais baixas apresentam taxas de aprovação sutilmente superiores, indicando menor tolerância a falhas em jogos caros.
 * **O Limite dos DLCs:** Títulos com um volume moderado de DLCs mantêm bons índices de aprovação. No entanto, o modelo agressivo de *Live-Service* (centenas de conteúdos adicionais) gera desgaste, não convertendo necessariamente em satisfação do público.
 * **Prêmio por Qualidade:** Há validação de valor em jogos bem avaliados; títulos classificados como "Aclamados" (com mais de 100 reviews) conseguem sustentar preços medianos significativamente superiores.
-
----
-
-## Solução de Problemas (Troubleshooting)
-
-### Erro de Autenticação no `kagglehub`
-
-**Problema:** O script trava ou pede chaves de API ao tentar baixar o dataset.
-
-**Solução:** Acesse sua conta no Kaggle, vá em *Settings* > *API* e clique em *Create New Token*. Um arquivo chamado `kaggle.json` será baixado. Coloque esse arquivo no diretório padrão do seu sistema (`~/.kaggle/` no Linux/Mac ou `C:\Users\SeuUsuario\.kaggle\` no Windows) antes de rodar o código.
-
-### Erro: "a execução de scripts foi desabilitada neste sistema"
-
-**Problema:** O PowerShell bloqueia a ativação da `venv`.
-
-**Solução:** Altere a política de execução local abrindo o PowerShell e digitando:
-
-```powershell
-Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
-
-```
-
-### Gráficos não renderizam ou travam a execução local
-
-**Problema:** O matplotlib tenta abrir uma interface gráfica que não está configurada.
-
-**Solução:** Certifique-se de que o script possui a linha `plt.show()` ao final de cada bloco ou que você está rodando em um terminal com suporte visual. Para atualizar a biblioteca de gráficos:
-
-```bash
-pip install --upgrade matplotlib seaborn
-
-```
 
 ---
 
