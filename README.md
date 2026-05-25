@@ -1,3 +1,16 @@
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&duration=3000&pause=1000&color=66C0F4&center=true&vCenter=true&width=750&lines=Data+Science+Portfolio+Project;Steam+Games+Exploratory+Analysis;Business+Insights+with+Python;From+Raw+Data+to+Market+Decisions" alt="Typing SVG" />
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.9+-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
+  <img src="https://img.shields.io/badge/Pandas-1.5+-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas"/>
+  <img src="https://img.shields.io/badge/NumPy-1.24+-013243?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy"/>
+  <img src="https://img.shields.io/badge/Matplotlib-3.5+-ffffff?style=for-the-badge&logo=python&logoColor=black" alt="Matplotlib"/>
+  <img src="https://img.shields.io/badge/Seaborn-Data%20Visualization-4C72B0?style=for-the-badge" alt="Seaborn"/>
+  <img src="https://img.shields.io/badge/Kaggle-Dataset-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white" alt="Kaggle"/>
+</p>
+
 # Análise Exploratória de Dados — Steam Games Dataset
 
 Este projeto apresenta uma análise exploratória de dados (EDA) detalhada sobre o catálogo de jogos da plataforma Steam, investigando dinâmicas de mercado, precificação e o comportamento dos usuários.
